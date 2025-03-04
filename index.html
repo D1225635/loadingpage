@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>動畫瘋 - 當機中</title>
+    <title>動畫瘋</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #004C70, #2CA6A4);
             color: #fff;
             font-family: 'Noto Sans TC', sans-serif;
             display: flex;
@@ -24,6 +23,11 @@
         .logo {
             width: 250px;
             animation: glitch 1s infinite;
+        }
+
+        .additional-logo {
+            width: 150px;
+            margin-top: 20px;
         }
 
         @keyframes glitch {
@@ -65,7 +69,8 @@
         }
 
         .retry-btn {
-            margin-top: 30px;
+            display: inline-block;
+            margin: 10px;
             padding: 12px 24px;
             font-size: 20px;
             color: #fff;
@@ -79,84 +84,17 @@
         .retry-btn:hover {
             background-color: #E60073;
         }
+
     </style>
 </head>
 <body>
 
-
 <img alt="logo" class="logo" src="1280x768bb.png">
+<img alt="additional logo" class="additional-logo" src="images.png">
 <div class="error-text">伺服器忙碌中，請稍後再試...</div>
-<button class="retry-btn" onclick="location.reload()">重試</button>
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>動畫瘋 - 當機中</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #004C70, #2CA6A4);
-            color: #fff;
-            font-family: 'Noto Sans TC', sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        .logo {
-            width: 250px;
-            animation: glitch 1s infinite;
-        }
-
-        @keyframes glitch {
-            0% {
-                transform: translate(0, 0);
-            }
-            20% {
-                transform: translate(-3px, 3px);
-            }
-            40% {
-                transform: translate(3px, -3px);
-            < ! DOCTYPE html > < html lang = "zh-TW" > < head > < meta charset = "UTF-8" > < meta content = "width=device-width, initial-scale=1.0" name = "viewport" > < title > 動畫瘋 - 當機中 < / title > < style > @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
-
-                body {
-                    margin: 0;
-                    padding: 0;
-                    background: linear-gradient(135deg, #004C70, #2CA6A4);
-                    color: #fff;
-                    font-family: 'Noto Sans TC', sans-serif;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100vh;
-                    text-align: center;
-                }
-
-                .logo {
-                    width: 250px;
-                    animation: glitch 1s infinite;
-                }
-
-                @keyframes glitch {
-                    0% {
-                        transform: translate(0, 0);
-                    }
-                    20% {
-                        transform: translate(-3px, 3px);
-                    }
-                    40% {
-                        transform: translate(3px, -3px);
-
-
-
+<button class="retry-btn" onclick="window.location.href='https://ani.gamer.com.tw/'">重試</button>
+<button class="retry-btn" onclick="window.location.href='https://www.gamer.com.tw/'">前往巴哈姆特</button>
+<button class="retry-btn" onclick="window.location.href='https://acgsecrets.hk/bangumi/202501/'">新番資訊</button>
 
 </body>
 </html>
