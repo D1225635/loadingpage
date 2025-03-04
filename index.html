@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>動畫瘋 - 當機中</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #004C70, #2CA6A4);
+            color: #fff;
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            width: 250px;
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0, 0);
+            }
+            20% {
+                transform: translate(-3px, 3px);
+            }
+            40% {
+                transform: translate(3px, -3px);
+            }
+            60% {
+                transform: translate(-3px, 3px);
+            }
+            80% {
+                transform: translate(3px, -3px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .error-text {
+            font-size: 26px;
+            margin-top: 20px;
+            color: #FFEB3B;
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .retry-btn {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #FF4081;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .retry-btn:hover {
+            background-color: #E60073;
+        }
+    </style>
+</head>
+<body>
+<img class="logo" src="/mnt/data/image.png">
+<div class="error-text">伺服器忙碌中，請稍後再試...</div>
+<button class="retry-btn" onclick="location.reload()">重試</button>
+</body>
+</html>
